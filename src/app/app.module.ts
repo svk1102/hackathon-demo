@@ -2,10 +2,10 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-// THE DOOMED PACKAGES
-// These import paths exist in v16 but are REMOVED in v17
-import { MatLegacyButtonModule } from '@angular/material/legacy-button';
-import { MatLegacyCardModule } from '@angular/material/legacy-card';
+// The legacy import paths for Angular Material components were removed in v17.
+// They should be replaced with the standard, non-legacy (MDC-based) imports.
+import { MatButtonModule } from '@angular/material/button';
+import { MatCardModule } from '@angular/material/card';
 
 import { AppComponent } from './app.component';
 
@@ -14,8 +14,8 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    MatLegacyButtonModule, // AI must find and replace this
-    MatLegacyCardModule    // AI must find and replace this
+    MatButtonModule, // Replaced MatLegacyButtonModule
+    MatCardModule    // Replaced MatLegacyCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
