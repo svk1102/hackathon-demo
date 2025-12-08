@@ -10,23 +10,13 @@ import { MatLegacyButtonModule } from '@angular/material/legacy-button';
 import { MatLegacyCardModule } from '@angular/material/legacy-card';
 import { MatLegacyCheckboxModule } from '@angular/material/legacy-checkbox';
 import { MatLegacyInputModule } from '@angular/material/legacy-input';
-import { MatLegacyFormFieldModule } from '@angular/material/legacy-form-field';
-import { MatLegacyRadioModule } from '@angular/material/legacy-radio';
-import { MatLegacySelectModule } from '@angular/material/legacy-select';
-import { MatLegacySlideToggleModule } from '@angular/material/legacy-slide-toggle';
-import { MatLegacySliderModule } from '@angular/material/legacy-slider';
-import { MatLegacyTabsModule } from '@angular/material/legacy-tabs';
-import { MatLegacyProgressSpinnerModule } from '@angular/material/legacy-progress-spinner';
-import { MatLegacyListModule } from '@angular/material/legacy-list';
-import { MatLegacyDialogModule } from '@angular/material/legacy-dialog'; // Only the module is imported here
+
 
 import { AppComponent } from './app.component';
-import { ShowcaseComponent } from './showcase/showcase.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ShowcaseComponent // The component that uses the legacy features
   ],
   imports: [
     BrowserModule,
@@ -38,15 +28,6 @@ import { ShowcaseComponent } from './showcase/showcase.component';
     MatLegacyCardModule,
     MatLegacyCheckboxModule,
     MatLegacyInputModule,
-    MatLegacyFormFieldModule,
-    MatLegacyRadioModule,
-    MatLegacySelectModule,
-    MatLegacySlideToggleModule,
-    MatLegacySliderModule,
-    MatLegacyTabsModule,
-    MatLegacyProgressSpinnerModule,
-    MatLegacyListModule,
-    MatLegacyDialogModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
