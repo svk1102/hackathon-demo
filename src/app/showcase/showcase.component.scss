@@ -1,0 +1,40 @@
+/* showcase.component.scss */
+
+.legacy-container {
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+  background-color: #f5f5f5;
+}
+
+.legacy-card {
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  
+  // Apply uniform margin below most block-level components
+  mat-legacy-card-content > * {
+    display: block;
+    margin-bottom: 24px;
+  }
+}
+
+// Styling for the radio button group section
+.example-section {
+  display: flex;
+  flex-direction: column;
+  label {
+    margin-bottom: 10px;
+    font-weight: 500;
+  }
+  mat-legacy-radio-group {
+    display: flex;
+    gap: 15px;
+  }
+}
+
+// Ensure the progress spinner is well-spaced
+.spinner-margin {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}

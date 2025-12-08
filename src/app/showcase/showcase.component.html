@@ -1,0 +1,80 @@
+<div class="legacy-container">
+  
+  <mat-card class="legacy-card">
+    <mat-card-header>
+      <mat-card-title>Angular Material (v16)</mat-card-title>
+      <mat-card-subtitle>Demonstrating legacy components.</mat-card-subtitle>
+    </mat-card-header>
+    
+    <mat-card-content>
+      
+      <mat-form-field appearance="fill">
+        <mat-label>Input</mat-label>
+        <input mat-input [(ngModel)]="inputValue" placeholder="Ex. Pizza">
+      </mat-form-field>
+      
+      <mat-checkbox [(ngModel)]="isChecked" (change)="log('Checkbox changed')">
+        Checkbox
+      </mat-checkbox>
+      
+      <section class="example-section">
+        <label> Radio:</label>
+        <mat-radio-group [(ngModel)]="radioValue">
+          <mat-radio-button value="option1">Option 1</mat-radio-button>
+          <mat-radio-button value="option2">Option 2</mat-radio-button>
+        </mat-radio-group>
+      </section>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Legacy Select</mat-label>
+        <mat-select [(ngModel)]="selectedValue">
+          <mat-option *ngFor="let food of foods" [value]="food.value">
+            {{food.viewValue}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+      
+      <mat-slide-toggle [(ngModel)]="isToggleOn" (change)="log('Toggle changed')">
+        Toggle: {{ isToggleOn ? 'ON' : 'OFF' }}
+      </mat-slide-toggle>
+
+      <mat-slider 
+        [(ngModel)]="sliderValue"
+        min="0"
+        max="100"
+        step="1"
+        thumbLabel
+        tickInterval="10"
+        (change)="log('Slider value: ' + sliderValue)">
+      </mat-slider>
+
+      <mat-progress-spinner 
+        mode="indeterminate" 
+        [value]="sliderValue"
+        class="spinner-margin">
+      </mat-progress-spinner>
+
+      <mat-list>
+        <mat-list-item> List Item 1</mat-list-item>
+        <mat-list-item> List Item 2</mat-list-item>
+      </mat-list>
+
+      <mat-tab-group>
+        <mat-tab *ngFor="let label of tabLabels" [label]="label">
+          <p>Content for {{ label }}</p>
+        </mat-tab>
+      </mat-tab-group>
+
+    </mat-card-content>
+    
+    <mat-card-actions>
+      <button mat-flat-button color="primary" (click)="log('Primary Button Clicked')">
+        Primary Button
+      </button>
+      <button mat-stroked-button color="accent" (click)="log('Accent Button Clicked')">
+        Accent Button
+      </button>
+    </mat-card-actions>
+
+  </mat-card>
+</div>
