@@ -11,13 +11,29 @@
 </mat-card>
 <div class="legacy-container">
   
-  <mat-card class="legacy-card">
-    <mat-card-header>
-      <mat-card-title>Angular Material (v16)</mat-card-title>
-      <mat-card-subtitle>Demonstrating legacy components.</mat-card-subtitle>
-    </mat-card-header>
+  <mat-tab-group>
+  <mat-tab label="Personal Info">
+    <ng-template matTabContent> 
+      <p>Enter details here...</p>
+    </ng-template>
+  </mat-tab>
+  
+  <mat-tab label="Payment">
+    <ng-template matTabContent> 
+      <p>Enter payment details...</p>
+    </ng-template>
+  </mat-tab>
+</mat-tab-group>
 
-  </mat-card>
+<carousel>
+  <div *ngFor="let item of slides" slide> 
+    <img [src]="item.image" alt="slide">
+  </div>
+</carousel>
+
+<div *ngIf="isLoading" class="loader">
+    Loading status...
+</div>
 </div>
 <div class="dashboard-container">
   
@@ -57,3 +73,29 @@
     {{ skill }}
   </mat-chip>
 </mat-chip-list>
+
+<main>
+  <h2>Migration Demo Component</h2>
+
+  <mat-tab-group>
+    <mat-tab label="Personal Info">
+      <ng-template matTabContent> 
+        <p>User: {{ userData | json }}</p>
+      </ng-template>
+    </mat-tab>
+    
+    <mat-tab label="Payment">
+      <ng-template matTabContent> 
+        <p>Payment details view.</p>
+      </ng-template>
+    </mat-tab>
+  </mat-tab-group>
+
+  <hr>
+
+  <carousel>
+    <div *ngFor="let item of slides" slide>
+      <h3>Slide Content</h3>
+    </div>
+  </carousel>
+</main>

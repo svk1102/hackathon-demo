@@ -13,8 +13,8 @@ import { MatLegacyInputModule } from '@angular/material/legacy-input';
 import { MatLegacyProgressSpinnerModule } from '@angular/material/legacy-progress-spinner';
 import { HttpClientModule } from '@angular/common/http';
 import { MatLegacyChipsModule } from '@angular/material/legacy-chips';
-
-
+import { MatLegacyTabsModule } from '@angular/material/legacy-tabs';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
 
 import { AppComponent } from './app.component';
 
@@ -33,7 +33,9 @@ import { AppComponent } from './app.component';
     MatLegacyInputModule,
     MatLegacyProgressSpinnerModule,
     MatLegacyChipsModule,
-    NgChartsModule
+    MatLegacyTabsModule,
+    NgChartsModule,
+    CarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]
