@@ -4,15 +4,15 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms'; // Needed for forms/inputs
-import { NgChartsModule } from 'ng2-charts';
+import { BaseChartDirective } from 'ng2-charts'; // MIGRATION: Changed from NgChartsModule
 
-import { MatLegacyButtonModule } from '@angular/material/legacy-button';
-import { MatLegacyCardModule } from '@angular/material/legacy-card';
-import { MatLegacyCheckboxModule } from '@angular/material/legacy-checkbox';
-import { MatLegacyInputModule } from '@angular/material/legacy-input';
-import { MatLegacyProgressSpinnerModule } from '@angular/material/legacy-progress-spinner';
+import { MatButtonModule } from '@angular/material/button'; // MIGRATION: Replaced MatLegacyButtonModule
+import { MatCardModule } from '@angular/material/card'; // MIGRATION: Replaced MatLegacyCardModule
+import { MatCheckboxModule } from '@angular/material/checkbox'; // MIGRATION: Replaced MatLegacyCheckboxModule
+import { MatInputModule } from '@angular/material/input'; // MIGRATION: Replaced MatLegacyInputModule
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner'; // MIGRATION: Replaced MatLegacyProgressSpinnerModule
 import { HttpClientModule } from '@angular/common/http';
-import { MatLegacyChipsModule } from '@angular/material/legacy-chips';
+import { MatChipsModule } from '@angular/material/chips'; // MIGRATION: Replaced MatLegacyChipsModule
 
 
 
@@ -27,13 +27,13 @@ import { AppComponent } from './app.component';
     BrowserAnimationsModule,
     FormsModule,
     HttpClientModule,
-    MatLegacyButtonModule,
-    MatLegacyCardModule,
-    MatLegacyCheckboxModule,
-    MatLegacyInputModule,
-    MatLegacyProgressSpinnerModule,
-    MatLegacyChipsModule,
-    NgChartsModule
+    MatButtonModule, // MIGRATION: Replaced MatLegacyButtonModule
+    MatCardModule, // MIGRATION: Replaced MatLegacyCardModule
+    MatCheckboxModule, // MIGRATION: Replaced MatLegacyCheckboxModule
+    MatInputModule, // MIGRATION: Replaced MatLegacyInputModule
+    MatProgressSpinnerModule, // MIGRATION: Replaced MatLegacyProgressSpinnerModule
+    MatChipsModule, // MIGRATION: Replaced MatLegacyChipsModule
+    BaseChartDirective // MIGRATION: Replaced NgChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

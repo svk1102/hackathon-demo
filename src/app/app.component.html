@@ -52,8 +52,8 @@
 
     <h3>Candidate Skills</h3>
 
-<mat-chip-list>
-  <mat-chip *ngFor="let skill of skills" color="primary" selected>
+<div class="app-chip-list">
+  <span *ngFor="let skill of skills" class="app-chip app-chip-primary app-chip-selected">
     {{ skill }}
-  </mat-chip>
-</mat-chip-list>
+  </span>
+</div>
