@@ -19,3 +19,24 @@
 
   </mat-card>
 </div>
+<div class="dashboard-container">
+  
+  <mat-card *ngIf="userData; else loading">
+    <mat-card-header>
+      <mat-card-title>User Profile</mat-card-title>
+      <mat-card-subtitle>{{ userData.role }}</mat-card-subtitle>
+    </mat-card-header>
+    
+    <mat-card-content>
+      <p>Welcome back, {{ userData.name }}!</p>
+      
+      <button mat-raised-button color="primary">Edit Profile</button>
+    </mat-card-content>
+  </mat-card>
+
+  <ng-template #loading>
+    <mat-spinner *ngIf="isLoading"></mat-spinner>
+    <div *ngIf="errorMsg" class="error">{{ errorMsg }}</div>
+  </ng-template>
+
+</div>

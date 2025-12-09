@@ -10,6 +10,9 @@ import { MatLegacyButtonModule } from '@angular/material/legacy-button';
 import { MatLegacyCardModule } from '@angular/material/legacy-card';
 import { MatLegacyCheckboxModule } from '@angular/material/legacy-checkbox';
 import { MatLegacyInputModule } from '@angular/material/legacy-input';
+import { MatLegacyProgressSpinnerModule } from '@angular/material/legacy-progress-spinner';
+import { HttpClientModule } from '@angular/common/http';
+
 
 
 import { AppComponent } from './app.component';
@@ -22,12 +25,12 @@ import { AppComponent } from './app.component';
     BrowserModule,
     BrowserAnimationsModule,
     FormsModule,
-
-    // ALL Legacy Material Modules
+    HttpClientModule,
     MatLegacyButtonModule,
     MatLegacyCardModule,
     MatLegacyCheckboxModule,
     MatLegacyInputModule,
+    MatLegacyProgressSpinnerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
