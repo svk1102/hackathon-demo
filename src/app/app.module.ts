@@ -4,8 +4,8 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms'; // Needed for forms/inputs
+import { NgChartsModule } from 'ng2-charts';
 
-// THE LEGACY ANGULAR MATERIAL MODULES (Compatible with v16)
 import { MatLegacyButtonModule } from '@angular/material/legacy-button';
 import { MatLegacyCardModule } from '@angular/material/legacy-card';
 import { MatLegacyCheckboxModule } from '@angular/material/legacy-checkbox';
@@ -30,7 +30,8 @@ import { AppComponent } from './app.component';
     MatLegacyCardModule,
     MatLegacyCheckboxModule,
     MatLegacyInputModule,
-    MatLegacyProgressSpinnerModule
+    MatLegacyProgressSpinnerModule,
+    NgChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
