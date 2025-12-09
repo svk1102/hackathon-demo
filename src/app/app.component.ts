@@ -64,4 +64,6 @@ export class AppComponent {
     maintainAspectRatio: false
   };
 
+  skills = ['Angular', 'AI', 'TypeScript', 'Hackathon'];
+
 }

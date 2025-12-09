@@ -12,6 +12,7 @@ import { MatLegacyCheckboxModule } from '@angular/material/legacy-checkbox';
 import { MatLegacyInputModule } from '@angular/material/legacy-input';
 import { MatLegacyProgressSpinnerModule } from '@angular/material/legacy-progress-spinner';
 import { HttpClientModule } from '@angular/common/http';
+import { MatLegacyChipsModule } from '@angular/material/legacy-chips';
 
 
 
@@ -31,6 +32,7 @@ import { AppComponent } from './app.component';
     MatLegacyCheckboxModule,
     MatLegacyInputModule,
     MatLegacyProgressSpinnerModule,
+    MatLegacyChipsModule,
     NgChartsModule
   ],
   providers: [],

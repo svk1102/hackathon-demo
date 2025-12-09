@@ -49,3 +49,11 @@
         [type]="'line'">
       </canvas>
     </div>
+
+    <h3>Candidate Skills</h3>
+
+<mat-chip-list>
+  <mat-chip *ngFor="let skill of skills" color="primary" selected>
+    {{ skill }}
+  </mat-chip>
+</mat-chip-list>
