@@ -5,12 +5,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms'; // Needed for forms/inputs
 
-// THE LEGACY ANGULAR MATERIAL MODULES (Compatible with v16)
-import { MatLegacyButtonModule } from '@angular/material/legacy-button';
-import { MatLegacyCardModule } from '@angular/material/legacy-card';
-import { MatLegacyCheckboxModule } from '@angular/material/legacy-checkbox';
-import { MatLegacyInputModule } from '@angular/material/legacy-input';
-import { MatLegacyProgressSpinnerModule } from '@angular/material/legacy-progress-spinner';
+// THE MODERN ANGULAR MATERIAL MODULES (Compatible with v17+)
+import { MatButtonModule } from '@angular/material/button';
+import { MatCardModule } from '@angular/material/card';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatInputModule } from '@angular/material/input';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { HttpClientModule } from '@angular/common/http';
 
 
@@ -26,11 +26,11 @@ import { AppComponent } from './app.component';
     BrowserAnimationsModule,
     FormsModule,
     HttpClientModule,
-    MatLegacyButtonModule,
-    MatLegacyCardModule,
-    MatLegacyCheckboxModule,
-    MatLegacyInputModule,
-    MatLegacyProgressSpinnerModule
+    MatButtonModule,
+    MatCardModule,
+    MatCheckboxModule,
+    MatInputModule,
+    MatProgressSpinnerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
