@@ -8,9 +8,6 @@ import { NgChartsModule } from 'ng2-charts';
 
 import { MatLegacyButtonModule } from '@angular/material/legacy-button';
 import { MatLegacyCardModule } from '@angular/material/legacy-card';
-import { MatLegacyCheckboxModule } from '@angular/material/legacy-checkbox';
-import { MatLegacyInputModule } from '@angular/material/legacy-input';
-import { MatLegacyProgressSpinnerModule } from '@angular/material/legacy-progress-spinner';
 import { HttpClientModule } from '@angular/common/http';
 import { MatLegacyChipsModule } from '@angular/material/legacy-chips';
 import { MatLegacyTabsModule } from '@angular/material/legacy-tabs';
@@ -29,9 +26,6 @@ import { AppComponent } from './app.component';
     HttpClientModule,
     MatLegacyButtonModule,
     MatLegacyCardModule,
-    MatLegacyCheckboxModule,
-    MatLegacyInputModule,
-    MatLegacyProgressSpinnerModule,
     MatLegacyChipsModule,
     MatLegacyTabsModule,
     NgChartsModule,
