@@ -11,7 +11,6 @@ import { MatLegacyCardModule } from '@angular/material/legacy-card';
 import { HttpClientModule } from '@angular/common/http';
 import { MatLegacyChipsModule } from '@angular/material/legacy-chips';
 import { MatLegacyTabsModule } from '@angular/material/legacy-tabs';
-import { CarouselModule } from 'ngx-bootstrap/carousel';
 
 import { AppComponent } from './app.component';
 
@@ -29,7 +28,6 @@ import { AppComponent } from './app.component';
     MatLegacyChipsModule,
     MatLegacyTabsModule,
     NgChartsModule,
-    CarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]
