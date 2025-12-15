@@ -3,7 +3,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { FormsModule } from '@angular/forms'; // Needed for forms/inputs
 import { NgChartsModule } from 'ng2-charts';
 
 import { MatLegacyButtonModule } from '@angular/material/legacy-button';
@@ -21,7 +20,6 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    FormsModule,
     HttpClientModule,
     MatLegacyButtonModule,
     MatLegacyCardModule,
