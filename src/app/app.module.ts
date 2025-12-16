@@ -8,8 +8,6 @@ import { NgChartsModule } from 'ng2-charts';
 import { MatLegacyButtonModule } from '@angular/material/legacy-button';
 import { MatLegacyCardModule } from '@angular/material/legacy-card';
 import { HttpClientModule } from '@angular/common/http';
-import { MatLegacyChipsModule } from '@angular/material/legacy-chips';
-import { MatLegacyTabsModule } from '@angular/material/legacy-tabs';
 
 import { AppComponent } from './app.component';
 
@@ -23,8 +21,6 @@ import { AppComponent } from './app.component';
     HttpClientModule,
     MatLegacyButtonModule,
     MatLegacyCardModule,
-    MatLegacyChipsModule,
-    MatLegacyTabsModule,
     NgChartsModule,
   ],
   providers: [],
